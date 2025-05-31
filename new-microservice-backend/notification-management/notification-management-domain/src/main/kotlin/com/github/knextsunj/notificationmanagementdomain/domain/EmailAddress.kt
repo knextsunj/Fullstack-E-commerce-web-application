@@ -3,6 +3,9 @@ package com.github.knextsunj.notificationmanagementdomain.domain
 import com.github.knextsunj.notificationmanagementdomain.constants.NotificationConstants
 import com.github.knextsunj.notificationmanagementdomain.exception.ValidationException
 
+/**
+ * Value object class for email address.
+ */
 data class EmailAddress(val toAddress: String?, val fromAddress: String?) {
     fun validateEmailAddressDetails(): Boolean {
 

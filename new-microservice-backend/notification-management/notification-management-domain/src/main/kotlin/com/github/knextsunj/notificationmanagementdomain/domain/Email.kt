@@ -3,6 +3,10 @@ package com.github.knextsunj.notificationmanagementdomain.domain
 import com.github.knextsunj.notificationmanagementdomain.exception.ValidationException
 import java.util.UUID
 
+/**
+ * Main domain entity for email.
+ * Unique ID field = id
+ */
 @JvmRecord
 data class Email(
     val senderName: String?,
