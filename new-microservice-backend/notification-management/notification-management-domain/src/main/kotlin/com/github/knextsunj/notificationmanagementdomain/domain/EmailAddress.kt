@@ -6,6 +6,7 @@ import com.github.knextsunj.notificationmanagementdomain.exception.ValidationExc
 /**
  * Value object class for email address.
  */
+@JvmRecord
 data class EmailAddress(val toAddress: String?, val fromAddress: String?) {
     fun validateEmailAddressDetails(): Boolean {
 
