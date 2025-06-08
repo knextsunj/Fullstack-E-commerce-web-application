@@ -21,7 +21,6 @@ class NotificationDomainServiceImpl:NotificationDomainService {
                 /**
                  * Invoke via interface the port to push email notification
                  */
-                outboundNotificationSenderPort.publishNotification(notification)
             }
 
             is Sms -> {
