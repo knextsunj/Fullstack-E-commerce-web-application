@@ -8,7 +8,7 @@ public class CategoryDomainServiceImpl implements CategoryDomainService {
     public void validateCategoryInfo(Category category) {
 
         category.getCategoryName().validateCategoryName();
-        category.getCategoryName().validateCategoryName();
+        category.getCategoryDetails().validateCategoryDetails();
     }
 
 }
