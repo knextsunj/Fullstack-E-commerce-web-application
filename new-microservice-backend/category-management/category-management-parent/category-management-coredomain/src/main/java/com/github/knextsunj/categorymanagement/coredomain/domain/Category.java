@@ -14,8 +14,8 @@ public class Category {
 
     private CategoryDetails categoryDetails;
 
-    public void checkDuplicateCategory(boolean isExists) {
-        if (isExists) {
+    public void checkDuplicateCategory(Category existingCategory) {
+        if (null!=existingCategory) {
             throw CategoryValidationException.builder().message("Duplicate category received").build();
         }
     }
